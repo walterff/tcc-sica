@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/06/2012 14:06:03 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="projetotcc.tabelas.Tblitensvacinas" table="tblitensvacinas" catalog="bdleite">
+        <id name="codItemVacina" type="java.lang.Integer">
+            <column name="CodItemVacina" />
+            <generator class="identity" />
+        </id>
+        <property name="tblAnimaisCodAni" type="int">
+            <column name="TblAnimais_CodAni" not-null="true" />
+        </property>
+        <property name="tblVacinasCodVacina" type="int">
+            <column name="TblVacinas_CodVacina" not-null="true" />
+        </property>
+        <property name="nomeItemVacina" type="string">
+            <column name="NomeItemVacina" length="20" />
+        </property>
+        <property name="dataAplic" type="date">
+            <column name="DataAplic" length="10" />
+        </property>
+        <property name="descrUltVacina" type="string">
+            <column name="DescrUltVacina" length="40" />
+        </property>
+        <property name="dataProxAplic" type="date">
+            <column name="DataProxAplic" length="10" />
+        </property>
+        <property name="descrProxVacina" type="string">
+            <column name="DescrProxVacina" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>

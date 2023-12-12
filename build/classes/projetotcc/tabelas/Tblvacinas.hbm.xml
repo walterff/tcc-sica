@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/06/2012 14:06:03 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="projetotcc.tabelas.Tblvacinas" table="tblvacinas" catalog="bdleite">
+        <id name="codVacina" type="java.lang.Integer">
+            <column name="CodVacina" />
+            <generator class="identity" />
+        </id>
+        <property name="nomeVacina" type="string">
+            <column name="NomeVacina" length="20" />
+        </property>
+        <property name="descricaoVacina" type="string">
+            <column name="DescricaoVacina" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>

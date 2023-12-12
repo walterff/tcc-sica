@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/06/2012 14:06:03 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="projetotcc.tabelas.Tblcontasrecebe" table="tblcontasrecebe" catalog="bdleite">
+        <id name="codConta" type="java.lang.Integer">
+            <column name="CodConta" />
+            <generator class="identity" />
+        </id>
+        <property name="dataInicial" type="date">
+            <column name="DataInicial" length="10" />
+        </property>
+        <property name="dataFinal" type="date">
+            <column name="DataFinal" length="10" />
+        </property>
+        <property name="nomeCli" type="string">
+            <column name="NomeCli" length="30" />
+        </property>
+        <property name="valorTotalReceb" type="java.lang.Float">
+            <column name="ValorTotalReceb" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

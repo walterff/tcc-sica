@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/06/2012 14:06:03 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="projetotcc.tabelas.Tblitensvendas" table="tblitensvendas" catalog="bdleite">
+        <id name="codItemVenda" type="java.lang.Integer">
+            <column name="CodItemVenda" />
+            <generator class="identity" />
+        </id>
+        <property name="tblVendasCodVenda" type="int">
+            <column name="TblVendas_CodVenda" not-null="true" />
+        </property>
+        <property name="tblProdutosCodProd" type="int">
+            <column name="TblProdutos_CodProd" not-null="true" />
+        </property>
+        <property name="tipoProdVenda" type="string">
+            <column name="TipoProdVenda" length="20" />
+        </property>
+        <property name="totalVendaProd" type="java.lang.Float">
+            <column name="TotalVendaProd" precision="12" scale="0" />
+        </property>
+        <property name="quantidadeProd" type="java.lang.Float">
+            <column name="QuantidadeProd" precision="12" scale="0" />
+        </property>
+        <property name="precoUniProd" type="java.lang.Float">
+            <column name="PrecoUniProd" precision="12" scale="0" />
+        </property>
+        <property name="tipoUni" type="string">
+            <column name="TipoUni" length="10" />
+        </property>
+        <property name="dataVendaProd" type="date">
+            <column name="DataVendaProd" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

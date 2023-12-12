@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/06/2012 14:06:03 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="projetotcc.tabelas.Tblprodutos" table="tblprodutos" catalog="bdleite">
+        <id name="codProd" type="java.lang.Integer">
+            <column name="CodProd" />
+            <generator class="identity" />
+        </id>
+        <property name="tipoProd" type="string">
+            <column name="TipoProd" length="20" />
+        </property>
+        <property name="descricaoProd" type="string">
+            <column name="DescricaoProd" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>

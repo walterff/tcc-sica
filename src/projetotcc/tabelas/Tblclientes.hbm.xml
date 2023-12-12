@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/06/2012 14:06:03 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="projetotcc.tabelas.Tblclientes" table="tblclientes" catalog="bdleite">
+        <id name="codCli" type="java.lang.Integer">
+            <column name="CodCli" />
+            <generator class="identity" />
+        </id>
+        <property name="nomeCli" type="string">
+            <column name="NomeCli" length="30" />
+        </property>
+        <property name="enderecoCli" type="string">
+            <column name="EnderecoCli" length="50" />
+        </property>
+        <property name="numCli" type="string">
+            <column name="NumCli" length="50" />
+        </property>
+        <property name="bairroCli" type="string">
+            <column name="BairroCli" length="20" />
+        </property>
+        <property name="cidadeCli" type="string">
+            <column name="CidadeCli" length="20" />
+        </property>
+        <property name="ufCli" type="java.lang.Integer">
+            <column name="UfCli" />
+        </property>
+        <property name="fone1cli" type="string">
+            <column name="Fone1Cli" length="13" />
+        </property>
+        <property name="fone2cli" type="string">
+            <column name="Fone2Cli" length="13" />
+        </property>
+        <property name="fone3cli" type="string">
+            <column name="Fone3Cli" length="13" />
+        </property>
+        <property name="fone4cli" type="string">
+            <column name="Fone4Cli" length="13" />
+        </property>
+    </class>
+</hibernate-mapping>
